@@ -215,6 +215,10 @@ margin: 5% auto;
     color: rgb(0, 166, 255);
     border-color: rgb(0, 166, 255);
 }
+.section1 button:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+}
 
 .icon-container{
     /* border: 2px solid black; */
