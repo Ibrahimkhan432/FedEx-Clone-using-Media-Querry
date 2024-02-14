@@ -20,7 +20,7 @@ body{
 .nav {
     background-color: #4d148c;
     border: 2px solid #4d148c;
-    width: 1336px;
+    width: 100%;
     height: 70px;
     color: white;
     text-align: center;
@@ -35,12 +35,13 @@ body{
 
 .nav-items {
     display: inline-block;
+padding: 0% 110px;
 
 }
 
 .nav-list {
     display: inline-block;
-
+width: 830px;
 }
 
 .nav-list ul li {
@@ -50,7 +51,7 @@ body{
 
 .signup {
     display: inline-block;
-    padding-left: 40px;
+    margin-top: 17px;
 
 }
 .search-logo{
@@ -214,6 +215,10 @@ margin: 5% auto;
     margin-top: 20px;
     color: rgb(0, 166, 255);
     border-color: rgb(0, 166, 255);
+}
+.section1 button:hover{
+    transform: scale(110%);
+    transition: 0.3s;
 }
 
 .icon-container{
@@ -716,41 +721,36 @@ select{
 .nav {
     background-color: #4d148c;
     border: 2px solid #4d148c;
-    width: 1336px;
+    width: 100%;
     height: 106px;
     color: white;
     text-align: center;
-    display: inline-block;
     position: fixed;
 }
 
-.logo {
-    display: inline-block;
-    width: 20px;
-}
-.logo img{
-    width: 180px;
-}
 .nav-items {
-    /* display: flex; */
-  margin: 12px;
-
+    /* display: flex;
+    width: 800px; */
+    min-width: 290px;
 }
-
-.nav-list {
- visibility: hidden;
-
-}
-
 .nav-list ul li {
-    display: inline-block;
-    margin: 30px;
+display: none;
+
+}
+
+
+.logo img{
+    visibility: visible !important;
+    width: auto;   
+    left: 0;
+    
 }
 
 .signup {
     display: inline-block;
     font-size: 20px;
-    padding-left: 246px;
+   
+
 
 }
 .search-logo{
@@ -765,16 +765,17 @@ select{
     display: inline-block;
  
 }
+.Header-main{
+    height: 675px;
+    /* width: 100%; */
+}
 .banner{
-    width: 1336px;
+    /* width:100%; */
     height: 285px;
 
 }
 .banner-boxes li{
     margin-top: 176px;
-}
-.Header-main{
-    height: 675px;
 }
 .last-heading{
     margin-top: 133px;
@@ -785,6 +786,9 @@ select{
 .tracking{
     float: left;
 }
+.section-container{
+    margin: 0% 17%;
+    }
 .section1{
 margin: 0% auto;
 text-align: center;
@@ -921,11 +925,7 @@ border-top-right-radius: 50px;
 }
 /* section 3  */
 .section3{
-/* border: 2px solid black; */
-width: 960px;
-height: 540px;
 margin: 0% auto;
-/* display: inline-block; */
 }
 
 .left-img{
@@ -943,9 +943,6 @@ display: inline-block;
 float: right;
 }
 
-/* .right-img a{
-margin-bottom: 30px;
-} */
 
 .right-img h2{
 color: rgb(56, 56, 56);
@@ -1320,3 +1317,76 @@ padding: 9px 125px;
 font-size: 12px;
 }
 }
+@media only screen  and (max-width:480px){
+    
+.nav{
+    height: 150px;
+}
+.logo img{
+    
+    width: 200px;
+    float: left;
+    visibility: visible !important;
+    margin-top: 30px;
+    
+}
+.nav-list{
+    width: 860px;
+
+}
+    .nav-list ul{
+    visibility: hidden;
+    display: inline-block;
+    }
+    .nav-items{
+        padding: 0%;
+        
+        
+    }
+    .signup{
+        visibility: hidden;
+    }
+.signup  img{
+        visibility: visible !important;
+        width: 130px;
+      
+
+}
+.hamburger{
+    visibility: visible !important;
+    display: inline-block;
+}
+.search-logo{
+    display:none;
+}
+.signup-logo{
+    margin-bottom: 10px;
+}
+.Header-main{
+    padding-top: 140px;
+}
+
+.section1{
+    display: block;
+    margin: 0% 20%;
+}
+.icon-container{
+    display: block;
+}
+.icon-container ul{
+    display: block;
+    width: 319px;
+}
+.left{
+    display: block;
+    width: 100%;
+}
+.right{
+    display: block;
+    width: 100%;
+    margin: 0% auto;
+}
+
+}
+
+
